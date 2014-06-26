@@ -56,7 +56,7 @@
 			}
 
 			function handleNoGeolocation(errorFlag) {
-				var content = (errorFlag) ? 'Maybe next time, yeah?' : 'Error: Your browser doesn\'t support geolocation.',
+				var content = (errorFlag) ? 'Uh Oh, there was an issue getting your location' : 'Error: Your browser doesn\'t support geolocation.',
 					options = {
 						map: map,
 						position: new google.maps.LatLng(60, 105),
@@ -135,7 +135,7 @@
 			latitude: data.latitude
 		});
 
-		var url = "http://api.bit.ly/v3/shorten?login=benhowdle89&apiKey=R_01f556645116f8620103c31e48d7f2a2&longUrl=" + linkVal + "&format=json",
+		var url = "http://api.bit.ly/v3/shorten?login=o_7jsgutqes4&apiKey=R_18235a95a35d185687026e23db4eaad9&longUrl=" + linkVal + "&format=json",
 			xhr = new XMLHttpRequest();
 
 		xhr.open('GET', url);
